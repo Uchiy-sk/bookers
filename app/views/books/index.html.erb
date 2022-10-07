@@ -34,7 +34,7 @@
           <%= link_to "Show", book_path(book.id) %>
         </div>
         <div class="link">
-          <%= link_to "Edit", book_path(book.id) %>
+          <%= link_to "Edit", edit_book_path(book.id) %>
         </div>
         <div class="link">
           <%= link_to "Destroy", book_path(book.id) %>
@@ -49,11 +49,11 @@
     <h2>New book</h2>
     <%= form_with model: Book.new do |f| %>
       <div class="new title">
-        <h4>Title</h4>
+        <label>Title</label>
         <%= f.text_field :title %>
       </div>
       <div class="new body">
-        <h4>Body</h4>
+        <label>Body</label>
         <%= f.text_area :body %>
       </div>
       <div class="new submit">
