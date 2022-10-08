@@ -51,3 +51,7 @@ h2 {
 p {
   margin: 33px;
 }
+
+.created, .updated, .destroyed {
+  color: green;
+}

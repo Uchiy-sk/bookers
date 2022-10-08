@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <p class="created"><%= flash[:created] %></p>
+    <p class="updated"><%= flash[:updated] %></p>
+    <p class="destroyed"><%= flash[:destroyed] %></p>
     <%= yield %>
   </body>
 </html>
